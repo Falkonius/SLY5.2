@@ -6,9 +6,9 @@
 // @author       SLY w/ Contributions by niofox, SkyLove512, anthonyra
 // @match        https://*.based.staratlas.com/
 // @require      https://unpkg.com/@solana/web3.js@latest/lib/index.iife.min.js
-// @require      https://raw.githubusercontent.com/ImGroovin/SAGE-Lab-Assistant/main/anchor-browserified.js
-// @require      https://raw.githubusercontent.com/ImGroovin/SAGE-Lab-Assistant/main/buffer-browserified.js
-// @require      https://raw.githubusercontent.com/ImGroovin/SAGE-Lab-Assistant/main/bs58-browserified.js
+// @require      https://raw.githubusercontent.com/Falkonius/SLY5.2/main/anchor-browserified.js
+// @require      https://raw.githubusercontent.com/Falkonius/SLY5.2/main/buffer-browserified.js
+// @require      https://raw.githubusercontent.com/Falkonius/SLY5.2/main/bs58-browserified.js
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=staratlas.com
 // @grant        GM_setValue
 // @grant        GM_getValue
@@ -19,10 +19,10 @@
 	'use strict';
 
 	//Used for reading solana data
-	let customReadRPCs = [];
+	let customReadRPCs = ['https://solana-api.syndica.io/access-token/WPoEqWQ2auQQY1zHRNGJyRBkvfOLqw58FqYucdYtmy8q9Z84MBWwqtfVf8jKhcFh/rpc'];
 
 	//Used for pushing transactions to solana chain
-	let customWriteRPCs = [];
+	let customWriteRPCs = ['https://tame-billowing-firefly.solana-mainnet.quiknode.pro/08a86dda409c69e29a6ec1badf1ced0f27a25a72/'];
 
     let saRPCs = [
         'https://twilight-autumn-diagram.solana-mainnet.quiknode.pro/4fc53d638efd1cc0f80764bc457944bb325d1ff1', //Quicknode
